@@ -6,7 +6,7 @@
  * Time: 20:11
  */
 
-namespace Core;
+namespace Core\Routing;
 
 
 class Route
