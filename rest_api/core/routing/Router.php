@@ -2,7 +2,6 @@
 
 namespace Core\Routing;
 
-
 class Router
 {
     public $routes;
@@ -28,9 +27,9 @@ class Router
             }
         }
 
-        if (! $matched) throw new \Exception('Could not match route.');
+        if (! $matched) echo "404";
 
-        // Parametrs(?)
+        // Params(?)
         $param_str = str_replace($route->pattern, '', $app_path);
         $params = explode('/', trim($param_str, '/'));
         $params = array_filter($params);
